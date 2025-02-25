@@ -276,16 +276,15 @@ hr {
 
 .hero-section {
   background-color: var(--background-secondary);
-  /* box-shadow: 0 0px 20px 10px var(--background-secondary); */
   position: relative;
-  z-index: 11;
   width: 100%;
+    height: 100dvh;
 }
 
 .img-slider {
   position: relative;
   width: 100%;
-  height: 100dvh;
+height: 100%;
   background-color: var(--background-secondary);
   overflow: hidden;
 }
