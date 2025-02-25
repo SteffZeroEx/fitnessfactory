@@ -13,7 +13,7 @@
     <nav class="desktop-nav">
       <div>
         <img src="./src/assets/img/logoert.webp" alt="" />
-        <p class="brand-name">FitnessFactory</p>
+        <p class="brand-name" id="brandName">FitnessFactory</p>
       </div>
       <ul>
         <li><a href="">Starteseite</a></li>
@@ -43,55 +43,45 @@
         <div class="slide active">
           <img src="./src/assets/img/hero_sec_1.jpg" alt="" />
           <div class="info">
-            <h2>Slide 01</h2>
+            <h2>Dein Körper. <br> Deine Regeln. <br>Dein Durchbruch.</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa mollitia repellat explicabo
-              esse quos nostrum et iste molestiae suscipit accusantium eveniet, ad provident porro sunt ipsam voluptatem
-              repudiandae totam.
+              Echte Fortschritte passieren nicht von allein <br> – du entscheidest, wie weit du gehst!
             </p>
           </div>
         </div>
         <div class="slide">
           <img src="./src/assets/img/hero_sec_2.jpg" alt="" />
           <div class="info">
-            <h2>Slide 02</h2>
+            <h2>Stärker als jede Ausrede. Bereit für jedes Ziel.</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa mollitia repellat explicabo
-              esse quos nostrum et iste molestiae suscipit accusantium eveniet, ad provident porro sunt ipsam voluptatem
-              repudiandae totam.
+              Jeder Tag ist eine neue Chance, über dich hinauszuwachsen. Fang heute an!
             </p>
           </div>
         </div>
         <div class="slide">
           <img src="./src/assets/img/hero_sec_3.jpg" alt="" />
           <div class="info">
-            <h2>Slide 03</h2>
+            <h2>Kein Limit. <br> Kein Stillstand. <br> Nur Resultate.</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa mollitia repellat explicabo
-              esse quos nostrum et iste molestiae suscipit accusantium eveniet, ad provident porro sunt ipsam voluptatem
-              repudiandae totam.
+              Hier zählt kein „vielleicht“ – nur dein Wille und dein Fortschritt!
             </p>
           </div>
         </div>
         <div class="slide">
           <img src="./src/assets/img/hero_sec_4.jpg" alt="" />
           <div class="info">
-            <h2>Slide 04</h2>
+            <h2>Du willst es? <br> Dann kämpf dafür!</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa mollitia repellat explicabo
-              esse quos nostrum et iste molestiae suscipit accusantium eveniet, ad provident porro sunt ipsam voluptatem
-              repudiandae totam.
+              Erfolg ist kein Zufall – er entsteht durch Schweiß, Disziplin und Leidenschaft!
             </p>
           </div>
         </div>
         <div class="slide">
           <img src="./src/assets/img/hero_sec_5.jpg" alt="" />
           <div class="info">
-            <h2>Slide 05</h2>
+            <h2>Nicht irgendwann. Nicht morgen. Jetzt!</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus culpa mollitia repellat explicabo
-              esse quos nostrum et iste molestiae suscipit accusantium eveniet, ad provident porro sunt ipsam voluptatem
-              repudiandae totam.
+              Wenn du auf den perfekten Moment wartest, wirst du ihn verpassen. <br> Leg jetzt los!
             </p>
           </div>
         </div>
@@ -126,14 +116,14 @@
     <section class="trainings">
       <div class="trainings-head rotate-reverse">
         <header class="header-text">
-          <h2>Erlebe die Energie – Dein Training in Aktion!</h2>
+          <h2>Finde dein perfektes Training – Dein Körper, deine Regeln!</h2>
           <p>
-            Lass dich inspirieren! Unser Video zeigt, was auf dich zukommt – von intensiven Workouts bis zu
-            beeindruckenden Transformationen. Mach den ersten Schritt und werde Teil unserer Studios!
+            Ob Kraft, Ausdauer oder Funktionalität – wähle das Workout, das dich deinem Ziel näherbringt. Wir bieten die
+            perfekte Umgebung für dein individuelles Training!
           </p>
         </header>
       </div>
-      <div class="animated-cards scroller" data-direction="left" data-speed="slow">
+      <div class="animated-cards scroller" data-direction="left" >
         <ul class="tag-list scroller__inner">
           <li class="cards">
             <div class="card-content">
@@ -197,12 +187,13 @@
       </div>
       <div class="trainings-foot rotate">
         <header class="header-text">
-          <h2>Finde dein perfektes Training – Dein Körper, deine Regeln!</h2>
+          <h2>Erlebe die Energie – Dein Training in Aktion!</h2>
           <p>
-            Ob Kraft, Ausdauer oder Funktionalität – wähle das Workout, das dich deinem Ziel näherbringt. Wir bieten die
-            perfekte Umgebung für dein individuelles Training!
+            Lass dich inspirieren! Unser Video zeigt, was auf dich zukommt – von intensiven Workouts bis zu
+            beeindruckenden Transformationen. Mach den ersten Schritt und werde Teil unserer Studios!
           </p>
         </header>
+        
       </div>
     </section>
 
@@ -214,10 +205,12 @@
         <source src="./src/assets/videos/bodyfactory_salzwedel_hd.mp4" type="video/mp4" />
         Dein Browser unterstützt kein HTML5-Video.
       </video>
+      <!-- <iframe width="1236" height="695" src="https://www.youtube.com/embed/9N-l_HVj5sU" title="Bodyfactory Salzwedel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
     </section>
 
     <!-- ? === PRICE SECTION === -->
     <section class="prices-section">
+      
       <header class="header-text">
         <h2>Investiere in dich selbst – Dein Körper ist es wert!</h2>
         <p>
