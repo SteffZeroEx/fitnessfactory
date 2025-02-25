@@ -526,7 +526,7 @@ hr {
 }
 
 .cards {
-  height: clamp(78dvh, 55vw, 100dvh);
+  height: clamp(800px, 55vw, 911px);
   background-color: #111111e5;
   outline: 6px ridge #ffae3b;
   margin-left: 3rem;
