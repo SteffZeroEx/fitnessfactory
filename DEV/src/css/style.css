@@ -38,6 +38,14 @@ body {
   height: 100%;
   position: relative;
 }
+hr {
+  width: 5px;
+  height: 5px;
+  background-color: var(--accent-secondary);
+  color: var(--accent-secondary);
+  border: none;
+  border-radius: 50%;
+}
 
 .header-text {
   color: var(--text-color);
@@ -48,10 +56,10 @@ body {
 
 .header-text h2 {
   margin-bottom: clamp(10px, 1vw, 1rem);
-  font-size: clamp(14px, 2vw, 24px);
+  font-size: clamp(14px, 2vw, 30px);
 }
 .header-text p {
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(12px, 2vw, 20px);
 }
 
 /*? === NAVIGATION === */
@@ -621,6 +629,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--background-primary);
+  padding: 2% 0;
 }
 
 .video-section video {
