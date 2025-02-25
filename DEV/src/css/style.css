@@ -445,7 +445,7 @@ z-index: 11;
   justify-content: center;
   align-items: center;
   padding: 12px;
-  height: 250px;
+  height: clamp(100px, 15vw, 250px);
   width: 100%;
   border-bottom: 5px solid #0000002a;
   border-radius: 0 0 66% 66%;
@@ -460,14 +460,14 @@ z-index: 11;
   justify-content: center;
   align-items: center;
   padding: 12px;
-  height: 250px;
+  height: clamp(100px, 15vw, 250px);
   width: 100%;
   border-top: 5px solid #0000002b;
   border-radius: 66% 66% 0 0;
 }
 
 .rotate {
-  background: linear-gradient(#111111, #000) padding-box,
+  background: linear-gradient(#111111, #111111) padding-box,
     linear-gradient(var(--angle), #e64a19, #ffae3b, #111111, #111111) border-box;
   animation: 15s rotate linear infinite;
 }
@@ -492,7 +492,7 @@ z-index: 11;
 }
 
 .cards {
-  height: 100vh;
+  height: clamp(78dvh, 55vw, 100dvh);
   background-color: #111111e5;
   outline: 6px ridge #ffae3b;
   margin-left: 3rem;
@@ -510,7 +510,7 @@ z-index: 11;
   justify-content: space-between;
   position: relative;
   width: 280px;
-  height: clamp(200px, 40%, 360px);
+  height: clamp(300px, 44%, 360px);
   border-radius: 10px;
   color: var(--text-color);
   border: 2px solid var(--text-color);
@@ -528,12 +528,15 @@ z-index: 11;
 .card-content > img {
   width: 100%;
   filter: drop-shadow(0 0 10px 5px #000);
+  object-fit: cover;
 }
 .card-content > p {
   border-radius: 5px;
   text-align: center;
   height: 70px;
   font-size: 0.8rem;
+margin: 0;
+
 }
 
 .tag-list {
@@ -584,6 +587,33 @@ z-index: 11;
   to {
     transform: translate(calc(-50% - 0.5rem));
   }
+}
+
+/*? === VIDEO SECTION === */
+
+.video-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-primary);
+}
+.video-section video {
+  width: 75%;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  margin: 5rem;
+  box-shadow: 0 0 20px 10px var(--background-secondary);
+}
+
+@media screen and (max-width: 1023px){
+  .video-section video {
+  width: 90%;
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  margin: 5rem;
+  box-shadow: 0 0 20px 10px var(--background-secondary);
+}
 }
 
 /*? === PRICES SECTION ===  */
