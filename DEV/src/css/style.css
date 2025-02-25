@@ -50,8 +50,10 @@ hr {
 .header-text {
   color: var(--text-color);
   text-align: center;
-  /* padding-left: clamp(1rem, 1vw, 2rem);
-  padding-right: clamp(1rem, 1vw, 2rem); */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 
 .header-text h2 {
@@ -60,6 +62,24 @@ hr {
 }
 .header-text p {
   font-size: clamp(14px, 2vw, 20px);
+}
+
+.btn-01 {
+  color: var(--background-primary);
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: var(--accent-color);
+  width: 200px;
+  border-radius: 5px;
+  margin: 50px 0 0 0;
+  transition: all .3s ease;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.btn-01:hover {
+  background-color: #db8f00;
+  box-shadow: 0 0 10px -1px var(--accent-secondary);
 }
 
 /*? === NAVIGATION === */
@@ -340,8 +360,6 @@ hr {
   padding: 15px 30px;
 }
 
-
-
 .img-slider .slide .info h2 {
   color: var(--text-color);
   font-size: clamp(32px, 4vw, 45px);
@@ -490,8 +508,9 @@ hr {
   border-bottom: 5px solid #0000002a;
   border-radius: 0 0 66% 66%;
 }
-.trainings-head header, .trainings-foot header  {
-padding: 0 20%;
+.trainings-head header,
+.trainings-foot header {
+  padding: 0 20%;
 }
 
 .trainings-foot {
@@ -537,13 +556,13 @@ padding: 0 20%;
 @media screen and (max-width: 1023px) {
   .trainings-head {
     border-radius: 0 0 50% 50%;
-     width: 150%;
-      right: -25%;
+    width: 150%;
+    right: -25%;
   }
   .trainings-foot {
     border-radius: 50% 50% 0 0;
-      width: 150%;
-      right: -25%;
+    width: 150%;
+    right: -25%;
   }
 }
 
@@ -679,7 +698,7 @@ padding: 0 20%;
 /*? === PRICES SECTION ===  */
 .prices-section {
   position: relative;
-  padding: 5% 0;
+  padding: 5% 0 5% 0;
   background: rgb(17, 17, 17);
   background: -moz-linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
   background: -webkit-linear-gradient(0deg, rgba(17, 17, 17, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 100%);
@@ -687,93 +706,101 @@ padding: 0 20%;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#000000",GradientType=1);
   overflow: hidden;
 }
-.ctn {
+.price-cards-ctn {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 600px;
   position: relative;
   width: 100%;
-  padding: 5% 0;
+  padding: 5% 1%;
 }
-.box {
+
+.price-card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  border-radius: 12px;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+.price-card ul {
+  transform: translateZ(20px);
+  /* list-style: none; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0 5%;
+  margin-top: 20px;
+}
+
+.price-head {
+  text-align: center;
+}
+
+.price-card:nth-child(2) .price-head h1 {
+  color: var(--accent-color);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) scale(1);
+  font-size: 30px;
+  animation: pulse 2s ease;
+    filter: drop-shadow(0 0 3px #e64a19);
+}
+
+.price-head > h1 > span {
+  margin-right: 10px;
+}
+
+.price-head h2 {
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.card-middle {
   height: 100%;
   width: 320px;
   border: 3px solid #ffad3b1c;
-  border-radius: 12px;
-  background: linear-gradient(#000, #111111) padding-box,
+  background: linear-gradient(#111111, #000) padding-box,
     linear-gradient(var(--angle), #111111, #111111, #ffae3b, #ffae3b) border-box;
   animation: 15s rotate linear infinite;
-  color: #fff;
-  margin: 0 5vw;
+  margin: 0 8vw;
   box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
-  overflow: hidden;
-
+  filter: drop-shadow(0px 25px 20px #000) drop-shadow(0 0 20px #000);
 }
 
-.box-1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.card-left {
   height: 85%;
   width: 250px;
-  /* border: 3px solid #0000; */
-  border-radius: 12px;
-  background-color: var(--background-primary);
-  transform: perspective(800px) rotateY(-10deg);
+background: rgb(17,17,17);
+background: -moz-linear-gradient(135deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(135deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+background: linear-gradient(135deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#000000",GradientType=1);  transform: perspective(800px) rotateY(-10deg);
   transform-origin: left right;
   transform-style: preserve-3d;
-  box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -15px #000 inset;
-  filter: drop-shadow(0 0 100px 5px #000);
-  overflow: hidden;
+  box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -10px #000 inset;
+  filter: drop-shadow(20px 25px 20px #000000) drop-shadow(75px 0px 20px #000000bb);
 }
 
-.box-1 ul {
-  transform: translateZ(20px);
-  list-style: none;
-  color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-.box-2 ul {
-  transform: translateZ(20px);
-  list-style: none;
-  color: var(--text-color);
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-}
-
-.box-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+.card-right {
   height: 85%;
   width: 250px;
-  border-radius: 12px;
-  background-color: var(--background-primary);
+background: rgb(17,17,17);
+background: -moz-linear-gradient(225deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(225deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+background: linear-gradient(225deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#000000",GradientType=1);
   transform: perspective(800px) rotateY(10deg);
   transform-origin: right left;
   transform-style: preserve-3d;
-  box-shadow: -10px 10px 15px -17px #000 inset, 10px -10px 15px -17px #ffae3b inset;
-  overflow: hidden;
-}
-
-
-
-.box ul {
-  transform: translateZ(20px);
-  list-style: none;
-}
-.box li {
-  text-shadow: 0 0 10px #fff;
+  box-shadow: -10px 10px 15px -10px #000 inset, 10px -10px 15px -17px #ffae3b inset;
+  filter: drop-shadow(-20px 25px 20px #000000) drop-shadow(-75px 0px 20px #000000bb);
 }
 
 @keyframes rotate {
@@ -789,27 +816,33 @@ padding: 0 20%;
 }
 
 @media screen and (max-width: 767px) {
-  .ctn {
+  .prices-section {
+  padding: 5% 0 20% 0;
+  }
+  .price-cards-ctn {
     flex-direction: column;
     row-gap: 50px;
     height: 100%;
   }
-  .box {
-
-  height: 400px;
-  width: 300px;
-order: 1;
-}
-.box-1 {
-  order: 2;
-   transform: perspective(0px) rotateY(0deg);
-     height: 400px;
-     width: 300px;
-}
-.box-2 {
-  order: 3;
-   transform: perspective(0px) rotateY(0deg);
-     height: 400px;
-     width: 300px;
-}
+  .card-middle {
+    height: 450px;
+    width: 300px;
+    order: 1;
+  }
+  .card-left {
+    order: 2;
+    transform: perspective(0px) rotateY(0deg);
+    height: 400px;
+    width: 300px;
+      filter: drop-shadow(0px 25px 20px #000) drop-shadow(0 0 20px #000);
+      box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
+  }
+  .card-right {
+    order: 3;
+    transform: perspective(0px) rotateY(0deg);
+    height: 400px;
+    width: 300px;
+      filter: drop-shadow(0px 25px 20px #000) drop-shadow(0 0 20px #000);
+      box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
+  }
 }
