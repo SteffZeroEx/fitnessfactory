@@ -50,10 +50,10 @@ hr {
 .header-text {
   color: var(--text-color);
   text-align: center;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-text h2 {
@@ -73,7 +73,7 @@ align-items: center;
   width: 200px;
   border-radius: 5px;
   margin: 50px 0 0 0;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -726,6 +726,8 @@ align-items: center;
   color: #fff;
   overflow: hidden;
   position: relative;
+   background: linear-gradient(#111111, #000) padding-box;
+  
 }
 .price-card ul {
   transform: translateZ(20px);
@@ -749,7 +751,7 @@ align-items: center;
   transform: translateX(-50%) scale(1);
   font-size: 30px;
   animation: pulse 2s ease;
-    filter: drop-shadow(0 0 3px #e64a19);
+  filter: drop-shadow(0 0 3px #e64a19);
 }
 
 .price-head > h1 > span {
@@ -776,11 +778,7 @@ align-items: center;
 .card-left {
   height: 85%;
   width: 250px;
-background: rgb(17,17,17);
-background: -moz-linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#000000",GradientType=1);  transform: perspective(800px) rotateY(-10deg);
+  transform: perspective(800px) rotateY(-10deg);
   transform-origin: left right;
   transform-style: preserve-3d;
   box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -10px #000 inset;
@@ -789,11 +787,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endCo
 .card-right {
   height: 85%;
   width: 250px;
-background: rgb(17,17,17);
-background: -moz-linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-background: linear-gradient(180deg, rgba(17,17,17,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#000000",GradientType=1);
   transform: perspective(800px) rotateY(10deg);
   transform-origin: right left;
   transform-style: preserve-3d;
@@ -814,7 +807,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endCo
 
 @media screen and (max-width: 767px) {
   .prices-section {
-  padding: 5% 0 20% 0;
+    padding: 5% 0 20% 0;
   }
   .price-cards-ctn {
     flex-direction: column;
@@ -831,13 +824,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endCo
     transform: perspective(0px) rotateY(0deg);
     height: 400px;
     width: 300px;
-      box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
+    box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
   }
   .card-right {
     order: 3;
     transform: perspective(0px) rotateY(0deg);
     height: 400px;
     width: 300px;
-      box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
+    box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
   }
 }
