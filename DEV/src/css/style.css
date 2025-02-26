@@ -958,7 +958,7 @@ hr {
 /*! PRICES */
 
 .prices-main-content {
-  padding-top: 100px;
+  padding: 100px 2vw 1vw 2vw;
   position: relative;
   background-image: linear-gradient(
     to bottom,
@@ -997,6 +997,7 @@ hr {
 }
 .price-cards-ctn .card-middle ul {
   margin: 60px 0 0 0;
+  padding: 30px 0;
 }
 
 .prices-adult, .prices-students {
@@ -1012,6 +1013,7 @@ hr {
   width: 400px;
   margin: clamp(1rem, 4vw, 100px);
   box-shadow: 0 0 10px -5px var(--accent-color) inset;
+  pointer-events: none;
 }
 
 @media screen and (max-device-width: 1023px) {
