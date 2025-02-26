@@ -332,6 +332,7 @@ color: var(--background-primary);}
   align-items: flex-end;
   overflow: hidden;
   background-color: #111111;
+  padding: 0 0 20px 0;
 }
 
 .footer img {
@@ -808,7 +809,7 @@ color: var(--background-primary);}
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 750px;
+  height: 800px;
   position: relative;
   width: 100%;
   padding: 5% 1%;
@@ -817,9 +818,8 @@ color: var(--background-primary);}
 .price-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 0 40px;
+  padding: 50px 40px;
   border-radius: 12px;
   color: #fff;
   overflow: hidden;
@@ -835,13 +835,18 @@ color: var(--background-primary);}
   margin-top: 20px;
 }
 
+.price-card li {
+  font-size: 16px;
+}
+
 .price-head {
-  margin-top: 40px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .price-head > h3 {
   font-weight: 600;
+  color: var(--accent-color);
 }
 
 .price-head > h3 > span {
@@ -851,7 +856,7 @@ color: var(--background-primary);}
   top: -5px;
 }
 
-.price-card:nth-child(2) .price-head h1 {
+.price-card:nth-child(2) h1 {
   color: var(--accent-color);
   position: absolute;
   top: 0;
@@ -874,7 +879,7 @@ color: var(--background-primary);}
 
 .card-middle {
   height: 100%;
-  width: 320px;
+  width: clamp(320px, 25vw, 400px);
   border: 3px solid #ffad3b1c;
   background: linear-gradient(#111111, #000) padding-box,
     linear-gradient(var(--angle), #111111, #111111, #ffae3b, #ffae3b) border-box;
@@ -885,7 +890,7 @@ color: var(--background-primary);}
 
 .card-left {
   height: 85%;
-  width: 250px;
+  width: clamp(250px, 25vw, 350px);
   transform: perspective(800px) rotateY(-10deg);
   transform-origin: left right;
   transform-style: preserve-3d;
@@ -894,7 +899,7 @@ color: var(--background-primary);}
 
 .card-right {
   height: 85%;
-  width: 250px;
+  width: clamp(250px, 25vw, 350px);
   transform: perspective(800px) rotateY(10deg);
   transform-origin: right left;
   transform-style: preserve-3d;
@@ -913,7 +918,7 @@ color: var(--background-primary);}
   inherits: false;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-divice-width: 767px) {
   .prices-section {
     padding: 5% 0 20% 0;
   }
