@@ -106,4 +106,20 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  // ? SCROLL-UP VISIBILITY
+
+  const scrollUp = document.querySelector(".scroll-up");
+  const dateContact = document.querySelector(".date-contact");
+  const navHeight = 80;
+
+  window.addEventListener("scroll", function() {
+    if (window.scrollY > navHeight) {
+      scrollUp.classList.add("show");
+      dateContact.classList.add("show")
+    } else {
+      scrollUp.classList.remove("show");
+      dateContact.classList.remove("show");
+    }
+  });
 });

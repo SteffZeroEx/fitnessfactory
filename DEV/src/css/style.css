@@ -16,6 +16,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   font-family: var(--font);
   ::-webkit-scrollbar {
     width: 12px;
@@ -73,13 +74,84 @@ hr {
   width: 200px;
   border-radius: 5px;
   margin: 50px 0 0 0;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease-in-out;
   font-weight: 600;
   text-transform: uppercase;
 }
 .btn-01:hover {
   background-color: #db8f00;
   box-shadow: 0 0 10px -1px var(--accent-secondary);
+}
+
+.date-contact {
+  position: fixed;
+  right: 0;
+  right: 25px;
+  bottom: 80px;
+  z-index: 999;
+  background-color: var(--background-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 3px solid var(--background-primary);
+  transition: all 0.3s ease;
+    opacity: 0;
+  visibility: hidden;
+}
+
+.date-contact svg {
+  margin: 0px 0 -3px 0;
+  fill: var(--accent-color);
+  width: 60px;
+  height: 50px;
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+}
+
+.date-contact a {
+  text-decoration: none;
+color: var(--background-primary);}
+
+.date-contact:hover {
+  transition: all .3s ease;
+  box-shadow: 0 0 10px -1px var(--accent-color);
+}
+
+.scroll-up {
+  background-color: var(--background-primary);
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  width: 40px;
+  height: 40px;
+  z-index: 99;
+  fill: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-up svg {
+  margin-top: 2px;
+  width: 40px;
+  height: 40px;
+  fill: var(--accent-color);
+}
+.scroll-up:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px -1px var(--accent-secondary);
 }
 
 /*? === NAVIGATION === */
@@ -361,8 +433,6 @@ hr {
   padding: 15px 30px;
 }
 
-
-
 .img-slider .slide .info h2 {
   color: var(--text-color);
   font-size: clamp(32px, 4vw, 45px);
@@ -407,25 +477,22 @@ hr {
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
 }
 
-
 @media only screen and (max-device-width: 767px) and (orientation: landscape) {
   .img-slider .slide .info h2 {
+    font-size: clamp(22px, 3vw, 45px);
+  }
 
-  font-size: clamp(22px, 3vw, 45px);
-
-}
-
-.img-slider .slide .info p {
-  font-size: clamp(18px, 2vw, 28px);
+  .img-slider .slide .info p {
+    font-size: clamp(18px, 2vw, 28px);
     padding: 5px 10px;
-}
-.img-slider .slide:nth-child(1) .info, 
-.img-slider .slide:nth-child(2) .info, 
-.img-slider .slide:nth-child(3) .info, 
-.img-slider .slide:nth-child(4) .info, 
-.img-slider .slide:nth-child(5) .info {
-  top: 60px;
-}
+  }
+  .img-slider .slide:nth-child(1) .info,
+  .img-slider .slide:nth-child(2) .info,
+  .img-slider .slide:nth-child(3) .info,
+  .img-slider .slide:nth-child(4) .info,
+  .img-slider .slide:nth-child(5) .info {
+    top: 60px;
+  }
 }
 
 /*? === OPENING SCROLLER === */
@@ -730,11 +797,18 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#111111",endColorstr="#000000",GradientType=1);
   overflow: hidden;
 }
+
+.prices-section > .header-text > p:nth-child(1n + 3) {
+  color: var(--accent-color);
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 3px;
+}
 .price-cards-ctn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
+  height: 750px;
   position: relative;
   width: 100%;
   padding: 5% 1%;
@@ -745,26 +819,35 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px;
   border-radius: 12px;
   color: #fff;
   overflow: hidden;
   position: relative;
-   background: linear-gradient(#111111, #000) padding-box;
-  
+  background: linear-gradient(#111111, #000) padding-box;
 }
 .price-card ul {
   transform: translateZ(20px);
-  /* list-style: none; */
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  padding: 0 5%;
+  padding: 10px 5%;
   margin-top: 20px;
 }
 
 .price-head {
   text-align: center;
+}
+
+.price-head > h3 {
+  font-weight: 600;
+}
+
+.price-head > h3 > span {
+  position: relative;
+  font-weight: 400;
+  font-size: 12px;
+  top: -5px;
 }
 
 .price-card:nth-child(2) .price-head h1 {
@@ -858,3 +941,5 @@ hr {
     box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
   }
 }
+
+/*! PRICES */
