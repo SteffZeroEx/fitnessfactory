@@ -74,13 +74,13 @@ hr {
   width: 200px;
   border-radius: 5px;
   margin: 50px 0 0 0;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   font-weight: 600;
   text-transform: uppercase;
 }
 .btn-01:hover {
   background-color: #db8f00;
-  box-shadow: 0 0 10px -1px var(--accent-secondary);
+  box-shadow: 0 0 15px 1px var(--accent-secondary);
 }
 
 .date-contact {
@@ -96,7 +96,7 @@ hr {
   border-radius: 10px;
   border: 3px solid var(--background-primary);
   transition: all 0.3s ease;
-    opacity: 0;
+  opacity: 0;
   visibility: hidden;
 }
 
@@ -111,10 +111,11 @@ hr {
 
 .date-contact a {
   text-decoration: none;
-color: var(--background-primary);}
+  color: var(--background-primary);
+}
 
 .date-contact:hover {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   box-shadow: 0 0 10px -1px var(--accent-color);
 }
 
@@ -164,6 +165,7 @@ color: var(--background-primary);}
   align-items: center;
   letter-spacing: 2px;
   position: absolute;
+  top: 0;
   z-index: 99;
   height: 60px;
   text-transform: uppercase;
@@ -938,7 +940,6 @@ color: var(--background-primary);}
     height: 400px;
     width: 300px;
     box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
-
   }
   .card-right {
     order: 3;
@@ -946,12 +947,72 @@ color: var(--background-primary);}
     height: 400px;
     width: 300px;
     box-shadow: -10px -10px 15px -17px #ffae3b inset, 10px 10px 15px -17px #ffae3b inset;
-
   }
-.card-right.price-head,
-.card-left.price-head {
-  margin-top: -20px;
-}
+  .card-right.price-head,
+  .card-left.price-head {
+    margin-top: -20px;
+  }
 }
 
 /*! PRICES */
+
+.prices-main-content {
+  padding-top: 100px;
+  position: relative;
+  background-image: linear-gradient(
+    to bottom,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #000000,
+    #020202,
+    #030303,
+    #050505,
+    #080808,
+    #0c0c0c,
+    #0f0f0f,
+    #111111
+  );
+}
+
+.prices-main-content .price-cards-ctn {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 0;
+
+}
+
+.prices-main-content .btn-01 {
+  margin: 0 0 50px 0;
+  padding: 5px 20px;
+  text-align: center;
+  box-shadow: 0 0 10px 1px var(--accent-color);
+}
+
+.price-cards-ctn .card-middle ul {
+  margin: 60px 0 0 0;
+}
+
+.prices-adult, .prices-students {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.prices-adult .price-card,
+.prices-students .price-card {
+  width: 100%;
+  width: 400px;
+  margin: clamp(1rem, 4vw, 100px);
+  box-shadow: 0 0 10px -5px var(--accent-color) inset;
+}
+
+@media screen and (max-device-width: 1023px) {
+  .prices-adult .price-cards-ctn:nth-child(2) {
+    display: flex;
+    order: 1;
+  }
+}
