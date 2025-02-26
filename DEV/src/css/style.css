@@ -77,6 +77,7 @@ hr {
   transition: all 0.3s ease-in-out;
   font-weight: 600;
   text-transform: uppercase;
+  box-shadow: 0 0 10px 0 var(--accent-color);
 }
 .btn-01:hover {
   background-color: #db8f00;
@@ -990,7 +991,10 @@ hr {
   text-align: center;
   box-shadow: 0 0 10px 1px var(--accent-color);
 }
-
+.prices-main-content .btn-01:hover {
+  background-color: #db8f00;
+  box-shadow: 0 0 15px 1px var(--accent-secondary);
+}
 .price-cards-ctn .card-middle ul {
   margin: 60px 0 0 0;
 }
