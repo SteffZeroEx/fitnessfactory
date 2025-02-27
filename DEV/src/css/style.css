@@ -1306,7 +1306,7 @@ hr {
 @media screen and (max-width: 767px) {
   .contact-data {
     width: 98%;
-    padding: 30px .3rem 50px .3rem;
+    padding: 30px 1.5rem 50px 1.5rem;
 
     h2 {
       margin: 0;
