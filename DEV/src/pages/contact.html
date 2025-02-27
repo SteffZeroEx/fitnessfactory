@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
-<link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
     <title>template</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
-  <body>
-
-        <!--? === NAVIGATION SECTION === -->
+  <body id="scrollUp">
+    <!--? === NAVIGATION SECTION === -->
     <!--? DESKTOP NAV -->
     <nav class="desktop-nav">
       <div>
@@ -29,7 +28,7 @@
       </ul>
     </nav>
 
-   <!--? MOBILE NAV -->
+    <!--? MOBILE NAV -->
     <nav class="mobile-nav">
       <div>
         <img src="../assets/icons/logo_fitness.webp" alt="Logo Fitnessfactory" />
@@ -44,7 +43,55 @@
       </ul>
     </nav>
 
-<div class="scroll-up">
+    <main class="contact">
+      <header class="contact-header">
+        <h1>Starte jetzt – wir sind für dich da!</h1>
+        <p>
+          Hast du Fragen oder willst direkt durchstarten? Kontaktiere uns für alle Infos rund um dein Training oder
+          vereinbare gleich einen Termin für ein Probetraining. Wir freuen uns, dich auf deinem Weg zu mehr Power,
+          Ausdauer und Stärke zu begleiten!
+        </p>
+      </header>
+      <section class="contact-ctn">
+        <form class="contact-form" action="post">
+          <label for="name">Vorname:</label>
+          <input id="name" type="text" placeholder="Bitte Vornamen eingeben..." />
+          <label for="surname">Nachname:</label>
+          <input id="surname" type="text" placeholder="Bitte Nachname eingeben..." />
+          <label for="email">E-Mail:</label>
+          <input id="email" type="email" placeholder="Bitte E-Mail eingeben..." />
+          <label for="message">Nachricht:</label>
+          <textarea
+            wrap="hard"
+            name="message"
+            id="message"
+            rows="8"
+            placeholder="Gib hier bitte deine Nachricht ein..."></textarea>
+          <button class="btn-01">Absenden</button>
+        </form>
+        <div class="contact-data">
+          <h2>Inhaber: Fitty Fitner</h2>
+          <h3>Postanschrift:</h3>
+          <ul>
+            <li>Salzwedel:</li>
+            <li>Arendseer Str. 26</li>
+            <li>29410 Salzwedel</li>
+            <li><br /></li>
+            <li>Diesdorf:</li>
+            <li>Am Markt 5b</li>
+            <li>29413 Diesdorf</li>
+          </ul>
+          <br />
+          <label for="mail-adress">E-mail Adresse:</label>
+          <a id="mail-adress" href="mailto:fittyfitner@trollmail.de">fittyfitner@trollmail.de</a>
+          <br />
+          <label for="">Telefon:</label>
+          <a href="+491234567890">+491234567890</a>
+        </div>
+      </section>
+    </main>
+
+    <div class="scroll-up">
       <a href="#scrollUp">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
           <path d="M480-525 291-336l-51-51 240-240 240 240-51 51-189-189Z" />
@@ -63,13 +110,11 @@
     <!--? === FOOTER SECTION -->
     <footer class="footer">
       <div><img src="../assets/icons/logo_fitness.webp" alt="Logo Fitnessfactory" /></div>
-        <ul class="links">
-          <li><a href="./legalnotice.html">Impressum</a></li>
-          <li><a href="./dataprivacy.html">Datenschutz</a></li>
-          <li><a href="./contact.html">Kontakt</a></li>
-        </ul>
-
-
+      <ul class="links">
+        <li><a href="./legalnotice.html">Impressum</a></li>
+        <li><a href="./dataprivacy.html">Datenschutz</a></li>
+        <li><a href="./contact.html">Kontakt</a></li>
+      </ul>
     </footer>
 
     <script src="../js/script.js" defer></script>

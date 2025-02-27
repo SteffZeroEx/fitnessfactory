@@ -86,6 +86,7 @@ hr {
 .btn-01:hover {
   background-color: #db8f00;
   box-shadow: 0 0 15px 1px var(--accent-secondary);
+  cursor: pointer;
 }
 
 .date-contact {
@@ -371,7 +372,7 @@ hr {
   color: #e64a19;
 }
 
-/*! ~~~ INDEX ~~~ */
+/*! ~~~ INDEX SITE ~~~ */
 /*? === HERO SECTION === */
 
 .hero-section {
@@ -966,7 +967,8 @@ hr {
   }
 }
 
-/*! PRICES */
+/*! ~~~ PRICES SITE ~~~ */
+/*? === PRICES === */
 
 .prices-main-content {
   padding: 100px 2vw 1vw 2vw;
@@ -1061,7 +1063,7 @@ hr {
   }
 }
 
-/*! LOCATION */
+/*! ~~~ LOCATION SITE ~~~ */
 /*? LOCATION & APPROACH */
 
 .location {
@@ -1158,5 +1160,161 @@ hr {
     border-radius: 5px;
     filter: brightness(0.8);
     margin: 10px 3vw;
+  }
+}
+
+/*! ~~~ CONTACT SITE ~~~ */
+/*? === CONTACT ===  */
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-primary);
+  padding: 100px 0 50px 0;
+  color: var(--text-color);
+  letter-spacing: 1px;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-header {
+  text-align: center;
+  color: var(--text-color);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  h1 {
+    text-decoration: underline;
+    font-size: clamp(24px, 4vw, 40px);
+    letter-spacing: 2px;
+    color: var(--accent-color);
+  }
+  p {
+    font-size: clamp(16px, 2vw, 18px);
+    padding: 10px 10px 0 10px;
+  }
+}
+
+.contact-ctn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 66%;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 30px 1.5rem 50px 1.5rem;
+  margin: 3rem 2vw;
+
+  label {
+    font-size: 1.1rem;
+  }
+
+  input {
+    margin-bottom: 20px;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    background-color: var(--background-primary);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: var(--text-color);
+  }
+  input::marker {
+    color: var(--text-color);
+  }
+
+  .btn-01 {
+    border: none;
+    width: 100%;
+    box-shadow: 0 0 10px -2px var(--accent-color);
+  }
+  textarea {
+    margin-bottom: 20px;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    background-color: var(--background-primary);
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    resize: vertical;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--accent-color);
+    opacity: 0.3;
+  }
+}
+.contact-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 25%;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 30px 1rem 50px 1rem;
+  margin: 0 2vw;
+  height: 100%;
+
+  h2 {
+    margin-bottom: 50px;
+  }
+  h3 {
+    margin-top: 50px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    list-style: none;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
+
+  label {
+    font-size: 1.1rem;
+  }
+  a {
+    font-size: 1.1rem;
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .contact-ctn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-data {
+    width: 66%;
+    padding: 30px 1rem 50px 1rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contact-data {
+    width: 98%;
+    padding: 30px .3rem 50px .3rem;
+
+    h2 {
+      margin: 0;
+    }
+  }
+  .contact-form {
+    width: 98%;
+    padding: 30px .5rem 50px .5rem;
+    margin: 3rem 2vw;
   }
 }
