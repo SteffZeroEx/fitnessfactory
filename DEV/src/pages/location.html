@@ -4,17 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../assets/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
-<link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
-<link rel="manifest" href="../assets/favicon/site.webmanifest" />
-    <title>template</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="../assets/favicon/site.webmanifest" />
+    <title>Standort & Anfahrt</title>
     <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
-
-        <!--? === NAVIGATION SECTION === -->
+    <!--? === NAVIGATION SECTION === -->
     <!--? DESKTOP NAV -->
     <nav class="desktop-nav">
       <div>
@@ -29,7 +28,7 @@
       </ul>
     </nav>
 
-   <!--? MOBILE NAV -->
+    <!--? MOBILE NAV -->
     <nav class="mobile-nav">
       <div>
         <img src="../assets/icons/logo_fitness.webp" alt="Logo Fitnessfactory" />
@@ -43,33 +42,93 @@
         <li><a href="./contact.html">Kontakt</a></li>
       </ul>
     </nav>
+    <main class="location">
+      <section class="location-header">
+        <h1>Finde dein Gym!</h1>
+        <p>Zwei Standorte für dein perfektes Workout!</p>
+      </section>
+      <section class="location-01">
+        <h2>Salzwedel</h2>
+        <div class="loc-img-ctn">
+          <img src="../assets/img/bodyfactory_saw_1.webp" alt="Bodyfactory Trainingsraum 1" />
+          <img src="../assets/img/bodyfactory_saw_2.webp" alt="Bodyfactory Trainingsraum 2" />
+          <img src="../assets/img/bodyfactory_saw_3.webp" alt="Bodyfactory Trainingsraum 3" />
+        </div>
+        <div class="loc-data-ctn">
+          <ul class="address">
+            <li>Arendseer Str. 26</li>
+            <li>29410 Salzwedel</li>
+            <li><br /></li>
+            <li>
+              <ul>
+                <li>ÖPNV Erreichbarkeit</li>
+                <li>Parkplätze direkt vor Ort</li>
+                <li>Fahrradständer vorhanden</li>
+              </ul>
+            </li>
+            <li><br /></li>
+            <li>Sonnenstudio nebenan</li>
+          </ul>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2409.9335460212724!2d11.1824749127006!3d52.84158247203105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47afad3af811dcb7%3A0x52e1d7a9ed287d2d!2sBodyfactory%20Salzwedel!5e0!3m2!1sde!2sde!4v1740647648087!5m2!1sde!2sde"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      <section class="location-02">
+        <h2>Diesdorf</h2>
+        <div class="loc-img-ctn">
+          <img src="../assets/img/bodyfactory_diesdorf.webp" alt="" />
+        </div>
+        <div class="loc-data-ctn">
+          <ul class="address">
+            <li>Am Markt 5b</li>
+            <li>29413 Diesdorf</li>
+            <li><br></li>
+            <li>
+              <ul>
+                <li>ÖPNV Erreichbarkeit</li>
+                <li>Parkplätze direkt vor Ort</li>
+                <li>Fahrradständer vorhanden</li>
+              </ul>
+            </li>
+          </ul>
 
-<div class="scroll-up">
-      <a href="#scrollUp">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
-          <path d="M480-525 291-336l-51-51 240-240 240 240-51 51-189-189Z" />
-        </svg>
-      </a>
-    </div>
+          <iframe
+            class="map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2414.9616658830787!2d10.872864112695996!3d52.75092687200617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47afb74d6b5af2dd%3A0x5627faaf8536a6c5!2sBodyfactory%20Diesdorf!5e0!3m2!1sde!2sde!4v1740647698368!5m2!1sde!2sde"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
 
-    <div class="date-contact">
-      <a title="Termin vereinbaren" href="./src/pages/contact.html"
-        ><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#db8f00">
-          <path
-            d="M515.23-539.77v-232.54q0-11.77 8.02-19.73 8.02-7.96 19.88-7.96h229.28q11.86 0 19.72 7.96 7.87 7.96 7.87 19.73v138.16q0 11.02-7.96 19.35-7.96 8.34-19.73 8.34H584.62l-69.39 66.69ZM546-637.23h223.23v-132H546v132Zm0 0v-132 132ZM755.77-160Q659-160 553.5-211.38 448-262.77 355.38-355.77q-92.61-93-144-198.11Q160-659 160-755.77q0-18.96 12.42-31.59Q184.83-800 203.46-800h88.25q17.29 0 28.83 10.38 11.54 10.39 16.31 27.7l20.77 88.71q2.07 15.9-1.58 28.56-3.66 12.65-12.65 20.88l-89.01 83.08q27.54 47.84 58.08 88.15t64.77 75.08q37.77 38.77 81.08 70.65 43.31 31.89 94.46 59.73l86.54-88.77q10-11 21.62-14.61 11.62-3.62 25.84-1.62l75.15 16.77q17.31 3.23 27.7 16.49Q800-305.57 800-288.46v85q0 18.63-12.64 31.04Q774.73-160 755.77-160ZM239-568l84.08-78.15q3.07-3.08 4.23-8.47 1.15-5.38.38-10L307-756.92q-.77-6.16-5-9.23-4.23-3.08-10.38-3.08h-90.08q-4.62 0-7.69 3.08-3.08 3.07-3.08 7.69-.31 41.23 12.35 88.88Q215.77-621.92 239-568Zm343.62 335.31q41 21.31 90.53 31.77 49.54 10.46 85.31 10.92 4.62 0 7.69-3.08 3.08-3.07 3.08-7.69v-89.31q0-6.15-3.08-10.38-3.07-4.23-9.23-5l-78.38-16.39q-4.62-.77-8.08.39-3.46 1.15-7.31 4.23l-80.53 84.54ZM239-568Zm343.62 335.31Z" /></svg
-      ></a>
-    </div>
+      <div class="scroll-up">
+        <a href="#scrollUp">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960">
+            <path d="M480-525 291-336l-51-51 240-240 240 240-51 51-189-189Z" />
+          </svg>
+        </a>
+      </div>
 
+      <div class="date-contact">
+        <a title="Termin vereinbaren" href="../pages/contact.html"
+          ><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#db8f00">
+            <path
+              d="M515.23-539.77v-232.54q0-11.77 8.02-19.73 8.02-7.96 19.88-7.96h229.28q11.86 0 19.72 7.96 7.87 7.96 7.87 19.73v138.16q0 11.02-7.96 19.35-7.96 8.34-19.73 8.34H584.62l-69.39 66.69ZM546-637.23h223.23v-132H546v132Zm0 0v-132 132ZM755.77-160Q659-160 553.5-211.38 448-262.77 355.38-355.77q-92.61-93-144-198.11Q160-659 160-755.77q0-18.96 12.42-31.59Q184.83-800 203.46-800h88.25q17.29 0 28.83 10.38 11.54 10.39 16.31 27.7l20.77 88.71q2.07 15.9-1.58 28.56-3.66 12.65-12.65 20.88l-89.01 83.08q27.54 47.84 58.08 88.15t64.77 75.08q37.77 38.77 81.08 70.65 43.31 31.89 94.46 59.73l86.54-88.77q10-11 21.62-14.61 11.62-3.62 25.84-1.62l75.15 16.77q17.31 3.23 27.7 16.49Q800-305.57 800-288.46v85q0 18.63-12.64 31.04Q774.73-160 755.77-160ZM239-568l84.08-78.15q3.07-3.08 4.23-8.47 1.15-5.38.38-10L307-756.92q-.77-6.16-5-9.23-4.23-3.08-10.38-3.08h-90.08q-4.62 0-7.69 3.08-3.08 3.07-3.08 7.69-.31 41.23 12.35 88.88Q215.77-621.92 239-568Zm343.62 335.31q41 21.31 90.53 31.77 49.54 10.46 85.31 10.92 4.62 0 7.69-3.08 3.08-3.07 3.08-7.69v-89.31q0-6.15-3.08-10.38-3.07-4.23-9.23-5l-78.38-16.39q-4.62-.77-8.08.39-3.46 1.15-7.31 4.23l-80.53 84.54ZM239-568Zm343.62 335.31Z" /></svg
+        ></a>
+      </div>
+    </main>
     <!--? === FOOTER SECTION -->
     <footer class="footer">
       <div><img src="../assets/icons/logo_fitness.webp" alt="Logo Fitnessfactory" /></div>
-        <ul class="links">
-          <li><a href="./legalnotice.html">Impressum</a></li>
-          <li><a href="./dataprivacy.html">Datenschutz</a></li>
-          <li><a href="./contact.html">Kontakt</a></li>
-        </ul>
-
-
+      <ul class="links">
+        <li><a href="./legalnotice.html">Impressum</a></li>
+        <li><a href="./dataprivacy.html">Datenschutz</a></li>
+        <li><a href="./contact.html">Kontakt</a></li>
+      </ul>
     </footer>
 
     <script src="../js/script.js" defer></script>

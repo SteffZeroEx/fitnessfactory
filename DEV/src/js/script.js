@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+  document.fonts.ready.then(() => {
+    document.documentElement.classList.add("wf-active");
+  });
+
   // ? === MOBILE BTN MENUE ===
   const menueBtn = document.querySelector(".menue-btn");
   menueBtn.addEventListener("click", (e) => {
@@ -113,10 +117,10 @@ document.addEventListener("DOMContentLoaded", () => {
   const dateContact = document.querySelector(".date-contact");
   const navHeight = 80;
 
-  window.addEventListener("scroll", function() {
+  window.addEventListener("scroll", function () {
     if (window.scrollY > navHeight) {
       scrollUp.classList.add("show");
-      dateContact.classList.add("show")
+      dateContact.classList.add("show");
     } else {
       scrollUp.classList.remove("show");
       dateContact.classList.remove("show");
